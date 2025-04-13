@@ -1,0 +1,18 @@
+
+Let's make English pronunciation checker feature
+
+View - PronunciationCheckerView
+Controller - PronunciationCheckerController
+
+TtsService - wrapper for flutter_tts package manages text to speech
+SpeechRecognitionService - wrapper for speech_to_text package manages speech regognition
+
+View: 
+textfield for entering text 
+play button to play text using text to speech
+
+microphone button to record user voice
+
+SpeechRecognitionService convert record to text
+PronunciationCheckerController compares recognized text to the text from textfield and displays feedback like "Good", "Excelent" or "Try again", "You can do better"
+
