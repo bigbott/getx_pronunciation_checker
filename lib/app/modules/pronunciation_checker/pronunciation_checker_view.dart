@@ -3,17 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_pronunciation_checker/app/common/extensions/text.dart';
 import 'package:getx_pronunciation_checker/app/common/widgets/glassmorphic/gradient_background.dart';
-import 'package:getx_pronunciation_checker/app/common/widgets/glassmorphic/translucent_icon_button.dart';
-import 'package:getx_pronunciation_checker/app/common/widgets/glassmorphic/translucent_text_field.dart';
 import 'package:getx_pronunciation_checker/app/modules/pronunciation_checker/widgets/feedback_builder.dart';
 import 'package:getx_pronunciation_checker/app/modules/pronunciation_checker/widgets/play_text.dart';
 import 'package:getx_pronunciation_checker/app/modules/pronunciation_checker/widgets/pronounced_builder.dart';
 import 'package:getx_pronunciation_checker/app/modules/pronunciation_checker/widgets/record_stop_button.dart';
-
 import 'pronunciation_checker_controller.dart';
 
 class PronunciationCheckerView extends GetView<PronunciationCheckerController> {
   const PronunciationCheckerView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GradientBackground(
@@ -39,19 +37,23 @@ class PronunciationCheckerView extends GetView<PronunciationCheckerController> {
                 SizedBox(
                   height: 10,
                 ),
-                PlayText(color: Colors.white, fontSize: 18,),
-                
+                PlayText(
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
                 SizedBox(height: 50),
                 Text('Tap mic button to start recording:')
                     .withStyle(color: Colors.white70, fontSize: 18),
                 SizedBox(height: 20),
-                RecordStopButton(size: 50,),
-                
+                RecordStopButton(
+                  size: 50,
+                ),
                 SizedBox(height: 20),
                 PronouncedBuilder(),
-                
                 SizedBox(height: 20),
-                FeedbackBuilder(fontSize: 40,),
+                FeedbackBuilder(
+                  fontSize: 40,
+                ),
               ],
             ),
           ),
