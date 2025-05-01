@@ -29,6 +29,10 @@ class HomeView extends GetView<HomeController> {
             route: Routes.WALKTHRU,
             label: 'WALKTHRU',
           ),
+           NavButton(
+            route: Routes.SHARE,
+            label: 'SHARE',
+          ),
         ],
       )),
     );

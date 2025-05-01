@@ -6,6 +6,8 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const PRONUNCIATION_CHECKER = _Paths.PRONUNCIATION_CHECKER;
   static const WALKTHRU = _Paths.WALKTHRU;
+  static const TEST = _Paths.TEST;
+  static const SHARE = _Paths.SHARE;
 }
 
 abstract class _Paths {
@@ -13,4 +15,6 @@ abstract class _Paths {
   static const HOME = '/home';
   static const PRONUNCIATION_CHECKER = '/pronunciation-checker';
   static const WALKTHRU = '/walkthru';
+  static const TEST = '/test';
+  static const SHARE = '/share';
 }

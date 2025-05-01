@@ -4,6 +4,10 @@ import '../modules/home/home_binding.dart';
 import '../modules/home/home_view.dart';
 import '../modules/pronunciation_checker/pronunciation_checker_binding.dart';
 import '../modules/pronunciation_checker/pronunciation_checker_view.dart';
+import '../modules/share/share_binding.dart';
+import '../modules/share/share_view.dart';
+import '../modules/test/test_binding.dart';
+import '../modules/test/test_view.dart';
 import '../modules/walkthru/walkthru_binding.dart';
 import '../modules/walkthru/walkthru_view.dart';
 
@@ -29,6 +33,16 @@ class AppPages {
       name: _Paths.WALKTHRU,
       page: () => const WalkthruView(),
       binding: WalkthruBinding(),
+    ),
+    GetPage(
+      name: _Paths.TEST,
+      page: () => const TestView(),
+      binding: TestBinding(),
+    ),
+    GetPage(
+      name: _Paths.SHARE,
+      page: () => const ShareView(),
+      binding: ShareBinding(),
     ),
   ];
 }

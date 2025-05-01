@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_pronunciation_checker/app/data/speech_recognition.dart';
+import 'package:getx_pronunciation_checker/app/infrastructure/speech_recognition_service.dart';
 import 'package:getx_pronunciation_checker/app/data/storage_service.dart';
-import 'package:getx_pronunciation_checker/app/data/tts_service.dart';
+import 'package:getx_pronunciation_checker/app/infrastructure/tts_service.dart';
 
 class WalkthruController extends GetxController {
  final TextEditingController textController = TextEditingController();
