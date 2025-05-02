@@ -13,5 +13,14 @@ Pronunciation checker with walkthru. Check `walkthru` folder.
 
 Pronunciation checker with share functionality. Check `share` folder.
 
+[Trophy animation](https://medium.com/easy-flutter/flutter-confetti-with-lottie-bf47cb38d2cd)
+
+Pronunciation checker with share functionality and trophy animation. Check `lottie` folder.
+
+
+
+
+
+
 
 MIT License
