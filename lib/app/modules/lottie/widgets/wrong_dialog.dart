@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:getx_pronunciation_checker/app/common/extensions/text.dart';
 
-class ShareDialog extends StatelessWidget {
+class WrongDialog extends StatelessWidget {
   final VoidCallback? onShare;
   final VoidCallback? onMaybeLater;
 
-  const ShareDialog({
+  const WrongDialog({
     super.key,
     this.onShare,
     this.onMaybeLater,
@@ -23,8 +23,8 @@ class ShareDialog extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Colors.blue.shade900.withValues(alpha: 0.7),
-              Colors.black.withValues(alpha: 0.7),
+              Colors.blue.shade900.withOpacity(0.7),
+              Colors.black.withOpacity(0.7),
             ],
           ),
           borderRadius: BorderRadius.circular(20),
@@ -37,7 +37,7 @@ class ShareDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             const Text(
-              'New achievement',
+              'Share',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 22,
@@ -46,7 +46,7 @@ class ShareDialog extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             const Text(
-              'Congratulations!\nYou correctly pronounced 10 words.\nDo you like to share it with friends?\nYou will motivate them to learn English.',
+              'Please share this application.',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20,
@@ -66,12 +66,11 @@ class ShareDialog extends StatelessWidget {
                   ),
                   child: const Text('Maybe later').withStyle(fontSize: 18),
                 ),
-                FilledButton(
+                OutlinedButton(
                   onPressed: onShare,
-                  style: FilledButton.styleFrom(
+                  style: OutlinedButton.styleFrom(
                     side: const BorderSide(color: Colors.white),
                     foregroundColor: Colors.white,
-                    backgroundColor: Colors.white.withValues(alpha: 0.15),
                     visualDensity: VisualDensity(horizontal: 2, vertical: 2),
                   ),
                   child: const Text('Share').withStyle(fontSize: 18),

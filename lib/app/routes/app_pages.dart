@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/home/home_binding.dart';
 import '../modules/home/home_view.dart';
+import '../modules/lottie/lottie_binding.dart';
+import '../modules/lottie/lottie_view.dart';
 import '../modules/pronunciation_checker/pronunciation_checker_binding.dart';
 import '../modules/pronunciation_checker/pronunciation_checker_view.dart';
 import '../modules/share/share_binding.dart';
@@ -43,6 +45,11 @@ class AppPages {
       name: _Paths.SHARE,
       page: () => const ShareView(),
       binding: ShareBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOTTIE,
+      page: () => const LottieView(),
+      binding: LottieBinding(),
     ),
   ];
 }

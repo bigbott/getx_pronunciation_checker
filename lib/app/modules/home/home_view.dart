@@ -33,6 +33,10 @@ class HomeView extends GetView<HomeController> {
             route: Routes.SHARE,
             label: 'SHARE',
           ),
+           NavButton(
+            route: Routes.LOTTIE,
+            label: 'LOTTIE',
+          ),
         ],
       )),
     );

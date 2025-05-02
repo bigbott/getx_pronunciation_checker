@@ -8,6 +8,7 @@ abstract class Routes {
   static const WALKTHRU = _Paths.WALKTHRU;
   static const TEST = _Paths.TEST;
   static const SHARE = _Paths.SHARE;
+  static const LOTTIE = _Paths.LOTTIE;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const WALKTHRU = '/walkthru';
   static const TEST = '/test';
   static const SHARE = '/share';
+  static const LOTTIE = '/lottie';
 }
